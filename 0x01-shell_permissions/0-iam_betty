@@ -1,2 +1,2 @@
 #!/bin/bash
-whoami betty
+usermod -l betty vagrant
