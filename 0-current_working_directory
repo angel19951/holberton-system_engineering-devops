@@ -1,2 +1,2 @@
 #!/bin/bash
-readlink -f holberton-system_engineering-devops
+readlink -f holberton-system_engineering-devops.
