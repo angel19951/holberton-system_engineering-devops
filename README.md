@@ -1,0 +1,1 @@
+This project is a tutorial on shell components
