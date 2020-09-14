@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ld [aA*zZ]
+ls -ld [a-z]* [A-Z]*
