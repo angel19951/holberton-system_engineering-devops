@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname 'A*G' 'a*g'
+find . -type f -iname 'A*G, a*g'
