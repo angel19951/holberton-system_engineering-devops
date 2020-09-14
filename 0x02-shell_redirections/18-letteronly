@@ -1,2 +1,2 @@
 #!/bin/bash
-find . type f -inname "Aa-Zz" -delete
+find . type f -inname "/etc/ssh/[Aa-Zz]" -delete
