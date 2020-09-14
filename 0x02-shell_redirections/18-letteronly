@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l --file-type [aA]*[zZ]
+ls -ld [aA*zZ]
