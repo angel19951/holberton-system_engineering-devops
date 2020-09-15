@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ls | declare | env | typeset -f
+echo ls | declare | env | typeset
