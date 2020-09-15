@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ld | grep -eo "^[a-zA-Z]" /etc/ssh/sshd_config
+find -type f -inname "a-zA-Z" -delete
