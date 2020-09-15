@@ -1,2 +1,2 @@
 #!/bin/bash
-find /etc/ssh/sshd_config -printf -type f -inname 'aA-zZ' 
+grep '^[aA-zZ]*' /etc/ssh/sshd_config 
