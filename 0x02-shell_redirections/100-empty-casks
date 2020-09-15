@@ -1,2 +1,2 @@
 #!/bin/bash
-find -maxpath 2 -empty -printf "%f\n"
+find -maxpath 3 -empty -printf "%f\n"
