@@ -1,0 +1,1 @@
+Read me file for Shell, init files, variables and expansions excersices and examples.
