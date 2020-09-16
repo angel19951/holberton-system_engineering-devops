@@ -1,2 +1,2 @@
 #!/bin/bash
-printf -v "%x" "$NUM"
+printf -v "%x" $NUM
