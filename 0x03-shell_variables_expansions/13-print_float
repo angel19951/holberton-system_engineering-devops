@@ -1,2 +1,2 @@
 #!/bin/bash
-printf %.10 $((10 * NUM))
+echo $((NUM / 100))
