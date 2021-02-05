@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script displays "Holberton School" 10 times
+# replacing the 4th display with "bad luck"
+# replacing the 8th display with "good luck"
+i=1
+while ((i <= 10))
+do
+    if ((i == 4))
+    then
+        echo "bad luck"
+    elif ((i == 8))
+    then
+        echo "good luck"
+    else
+        echo "Holberton School"
+    fi
+    ((i = i + 1))
+done
