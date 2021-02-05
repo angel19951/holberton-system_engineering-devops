@@ -3,7 +3,7 @@
 # Displays FizzBuzz when the number is a multiple of 3 and 5
 # Displays Fizz when the number is multiple of 3
 # Displays Buzz when the number is a multiple of 5
-for ((i = 0; i <= 100; i++))
+for ((i = 1; i <= 100; i++))
 do
     if ((i == 0 || i == 0))
     then
