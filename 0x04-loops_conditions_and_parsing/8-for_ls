@@ -3,7 +3,7 @@
 # The content of the current directory
 # In a lisr format
 # Where only the part of the name after the first dash is displayed
-for eachfile in $(ls);
+for eachfile in *
 do
     echo "$eachfile"
 done
