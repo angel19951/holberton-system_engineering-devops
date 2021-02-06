@@ -3,7 +3,7 @@
 # The content of the current directory
 # In a lisr format
 # Where only the part of the name after the first dash is displayed
-for eachfile in *
+for eachfile in *;
 do
-    echo "$eachfile"
+    echo "$eachfile" | cut -d'-' -f2
 done
