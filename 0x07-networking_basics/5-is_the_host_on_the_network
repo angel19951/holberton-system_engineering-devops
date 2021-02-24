@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script pings an IP 5 times from given arguments
-if [ "$1" ]
+if [ -t "$1" ]
 then
     ping "$1" -c 5
 else
