@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This module displays the listening sockets, pid and name of the program where
+# each socket belongs
+netstat -llp
