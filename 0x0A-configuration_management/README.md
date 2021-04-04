@@ -39,4 +39,4 @@ production in 0.01 seconds
  - [Task 1](https://github.com/angel19951/holberton-system_engineering-devops/blob/master/0x0A-configuration_management/1-install_a_package.pp)
 
 ### 2. Kill a specific process using puppet
- - [Task 2]()
+ - [Task 2](https://github.com/angel19951/holberton-system_engineering-devops/blob/master/0x0A-configuration_management/2-execute_a_command.pp)
