@@ -33,7 +33,7 @@ production in 0.01 seconds
 
 ## Tasks:
 ### 0. Create a file using puppet
- - [Task 0]()
+ - [Task 0](https://github.com/angel19951/holberton-system_engineering-devops/blob/master/0x0A-configuration_management/0-create_a_file.pp)
 
 ### 1. Install puppet-lint using puppet
  - [Task 1]()
