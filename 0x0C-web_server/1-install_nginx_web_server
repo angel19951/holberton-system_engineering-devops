@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Script to install nginx on web-01 server
+# Nginx should be listening on port 80
+# When querying nginx its root with a GET request using culr, it must return a
+# page that contains the string "Holberton School"
+#!/usr/bin/env bash
+# Script to auto install nginx
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+sudo service nginx start
+sudo echo "Holberton School" | sudo tee /var/www/html/index.html
+sudo service nginx restart
