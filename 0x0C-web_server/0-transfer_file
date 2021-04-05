@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Script to transfer files between a server and a client
+if [[ "$#" -lt 3 ]]; then
+    echo "Ussage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+else
+    path_to_file="$1"
+    ip="$2"
+    username="$3"
+    if [[ "$#" -eq 4 ]]; then
+        ssh_key="$4"
+        scp -i  "$ssh_key" "$path_to_file" "$username"@"$ip":~/ 
+    else
+    scp "$path_to_file" "$username"@"$ip":~/
+    fi
+fi
