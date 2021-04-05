@@ -61,9 +61,9 @@ docker run --rm -v "$PWD:/mnt" koalaman/shellcheck:stable myscript
 >> For more information on [Shellcheck](https://github.com/koalaman/shellcheck) click [here](https://github.com/koalaman/shellcheck)
 ## Tasks:
 ### 0. Bash script that transfers a file from client to a server
-- [Task 0]()
+- [Task 0](https://github.com/angel19951/holberton-system_engineering-devops/blob/master/0x0C-web_server/0-transfer_file)
 ### 1. Install nginx in a web server
-- [Task 1]()
+- [Task 1](https://github.com/angel19951/holberton-system_engineering-devops/blob/master/0x0C-web_server/1-install_nginx_web_server)
 ### 2. Set up a domain name
 - [Task 2]()
 ### 3. Configure Nginx server so that is redirected to another page
