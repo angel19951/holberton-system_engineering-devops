@@ -4,6 +4,11 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo echo "Holberton School" | sudo tee /var/www/html/index.html
+<<<<<<< HEAD
 redirect="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
 sudo sed -i "36i $redirect" /etc/nginx/sites-available/default
+=======
+redirect='\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;'
+sudo sed -i '36i $redirect' /etc/nginx/sites-available/default
+>>>>>>> 412abb1a98b21be711a63c11000b7e1816ead3e6
 sudo service nginx restart
