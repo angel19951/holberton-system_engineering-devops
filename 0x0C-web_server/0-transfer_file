@@ -8,8 +8,8 @@ else
     username="$3"
     if [[ "$#" -eq 4 ]]; then
         ssh_key="$4"
-        scp -i  "$ssh_key" "$path_to_file" "$username"@"$ip":~/
+        scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i "$ssh_key" "$path_to_file" "$username"@"$ip":~/
     else
-    scp -o StrictHostKeyChecking=no "$path_to_file" "$username"@"$ip":~/
+    scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no "$path_to_file" "$username"@"$ip":~/
     fi
 fi
