@@ -2,11 +2,8 @@
 # Script to configure your nginx server so that redirect_me 
 # is redirecting to another page.
 sudo apt-get -y update
-sudo apt-get -y upgrade
 sudo apt-get -y install nginx
-sudo service nginx start
-sudo echo "Holberton School" | sudo tee /var/var/www/html/index.html
-sudo sed -i '/listen 80 default_server;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
-sudo echo "Ceci n'est pas une page" | sudo tee /var/var/www/html/new_404.html
-sudo sed -i '/listen 80 default_server;/a error_page 404 /new_404.html; \nlocation = /new_404.html {\n root /var/www/html;\n internal;\n}' /etc/nginx/sites-available/default
-sudo service nginx restart
+sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/new_404.html
+error='\\\terror_page 404 /new_404.html;\n\tlocation/new_404.html{\n\t\troot/var/www/html;\n\t\tinternal;\n\t}'
+sudo sed -i '37i $error' /etc/nginx/sites-available/default
+service nginx restart
