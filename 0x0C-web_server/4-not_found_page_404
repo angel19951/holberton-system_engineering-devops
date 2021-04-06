@@ -4,6 +4,7 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo echo "Ceci n'est pas une page" | sudo tee /var/www/html/new_404.html
-error='\\\terror_page 404 /new_404.html;\n\tlocation/new_404.html{\n\t\troot/var/www/html;\n\t\tinternal;\n\t}'
-sudo sed -i '37i $error' /etc/nginx/sites-available/default
+error="\\\terror_page 404
+/new_404.html;\n\tlocation/new_404.html{\n\t\troot/var/www/html;\n\t\tinternal;\n\t}"
+sudo sed -i "37i $error" /etc/nginx/sites-available/default
 sudo service nginx restart
