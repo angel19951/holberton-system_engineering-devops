@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # Configure web server similar to a previous project
 sudo apt-get -y update
 sudo apt-get -y install nginx
