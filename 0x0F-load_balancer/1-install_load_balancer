@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash script to install and configure HAProxy
+sudo apt-get -y update
+sudo apt-get -y install haproxy=1.6.\*
