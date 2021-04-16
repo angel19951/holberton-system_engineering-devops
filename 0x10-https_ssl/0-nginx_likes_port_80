@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bash script to set ports to 80
+sed -i "listen 80 default_server;/listen 80 default_server;/" /etc/nginx/sites-enable/default
+sed -i "ipv6only=on" /etc/nginx/sites-available/default
+service nginx restart
