@@ -2,6 +2,7 @@
 
 Setting up mysql database on servers web-01 and web-02
 
+___Note:___ some tasks are configurations inside the provided servers.
 ## Requirements
 ### General:
 - Editor: Nvim
