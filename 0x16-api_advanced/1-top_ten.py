@@ -8,12 +8,15 @@ import requests
 
 
 def top_ten(subreddit):
-    subscribers = requests.get('https://www.reddit.com/r/{}.json?sort=hot&limit=10'
-                              .format(subreddit),
-                              headers={'User-Agent': "My-User-Agent"},
-                              allow_redirects=False)
-    if subscribers.status_code >= 300:
+    try:
+        subscribers = requests.get('https://www.reddit.com/r/{}.json?sort=hot&limit=10'
+                                   .format(subreddit),
+                                   headers={'User-Agent': "My-User-Agent"},
+                                   allow_redirects=False)
+        if subscribers.status_code >= 300:
+            print('None')
+        else:
+            [print(child.get('data').get('title'))
+            for child in subscribers.json().get('data').get('children')]
+    except:
         print('None')
-    else:
-        [print(child.get('data').get('title'))
-         for child in subscribers.json().get('data').get('children')]
